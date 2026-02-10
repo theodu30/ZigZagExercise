@@ -1,0 +1,23 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Scripts/UI/menu.uss?fileID=7433441132597879392&amp;guid=1eba0d66ae3e1fe4ab85dc1ca7e56635&amp;type=3#menu" />
+    <ui:VisualElement name="RENDER" style="flex-grow: 1; width: 100%; height: 100%; position: absolute; background-image: url(&quot;project://database/Assets/Textures/low_res_cam.renderTexture?fileID=8400000&amp;guid=5b7b29b0f27a792439da5f20a892c543&amp;type=2#low_res_cam&quot;);" />
+    <ui:VisualElement name="HUD" picking-mode="Ignore" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; opacity: 1; -unity-font-definition: url(&quot;project://database/Assets/Fonts/PressStart2P.ttf?fileID=12800000&amp;guid=d34fc43c97faa90439df5ea5c8453398&amp;type=3#PressStart2P&quot;); color: rgb(51, 51, 51); -unity-font-style: bold; font-size: 40px;">
+        <ui:Label text="Score:" name="ScoreLabel" style="position: absolute; top: 50px; right: 50px; align-self: flex-end; -unity-text-align: upper-right;">
+            <ui:Label text="0" name="Score" style="position: absolute; top: 50px; right: auto; align-self: flex-end; -unity-text-align: upper-right;" />
+        </ui:Label>
+        <ui:Label name="BestScoreLabel" text="Best Score:" style="position: absolute; top: 50px; right: auto; align-self: flex-start; -unity-text-align: upper-left; left: 50px;">
+            <ui:Label name="BestScore" text="0" style="position: absolute; top: 50px; right: auto; align-self: flex-start; left: auto; -unity-text-align: upper-left;" />
+        </ui:Label>
+    </ui:VisualElement>
+    <ui:VisualElement name="Menu" picking-mode="Ignore" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; color: rgb(51, 51, 51); font-size: 40px; -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/Fonts/PressStart2P.ttf?fileID=12800000&amp;guid=d34fc43c97faa90439df5ea5c8453398&amp;type=3#PressStart2P&quot;);">
+        <ui:Button name="Start" class="start-button" style="position: absolute; left: 50%; right: 50%; bottom: 50px; width: 200px; height: 200px; translate: -50% 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: rgba(0, 0, 0, 0);" />
+        <ui:Label text="Level Played :" name="LevelPlayedLabel" style="position: absolute; left: 50%; right: 50%; translate: -50% 0; -unity-text-align: upper-center; bottom: auto; align-self: center; top: 50px;">
+            <ui:Label text="0" name="LevelPlayed" style="position: absolute; left: auto; right: auto; translate: 0 0; bottom: -125px; align-self: center; -unity-text-align: middle-center;" />
+        </ui:Label>
+        <ui:Button name="Quit" class="quit-button" style="position: absolute; left: 50px; right: 0; bottom: 50px; width: 200px; height: 200px; translate: 0 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; background-color: rgba(0, 0, 0, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="GameOver" picking-mode="Ignore" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; color: rgb(51, 51, 51); font-size: 50px; -unity-font-style: bold; -unity-font-definition: url(&quot;project://database/Assets/Fonts/PressStart2P.ttf?fileID=12800000&amp;guid=d34fc43c97faa90439df5ea5c8453398&amp;type=3#PressStart2P&quot;);">
+        <ui:Button name="Restart" class="restart-menu" style="position: absolute; left: 65%; right: 35%; bottom: 50px; width: 200px; height: 200px; translate: -50% 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; background-color: rgba(0, 0, 0, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" />
+        <ui:Button name="Menu" class="menu-button" style="position: absolute; left: 35%; right: 65%; bottom: 50px; width: 200px; height: 200px; translate: -50% 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; background-color: rgba(0, 0, 0, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" />
+    </ui:VisualElement>
+</ui:UXML>
