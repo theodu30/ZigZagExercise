@@ -19,7 +19,10 @@ Camera is pixelated for style to match the UI assets and font.
 You can't toggle off the pixelated effect.  
 
 ## Known Issues
-No issues found for now
+When you launch the game, if you start by pressing SPACE, the game is in an  
+undefined state. The level does not generate and you can't fall.  
+Since there is no way to stop playing during a game, you are stuck  
+in this state.
 
 #
 > Disclaimer:  
